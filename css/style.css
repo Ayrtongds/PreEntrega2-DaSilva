@@ -103,7 +103,7 @@ body {
 
 
 .imagenindex {
-    background-image: url(/imag/posiblefondo.jpg);
+    background-image: url(../imag/posiblefondo.jpg);
     background-size: cover;
     background-position: auto;
 }
