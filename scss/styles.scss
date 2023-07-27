@@ -1,0 +1,237 @@
+
+  .Lista {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    padding-top: 12px;
+    gap: 40px;
+    margin-right: 40px;
+  }
+  
+  h1 {
+    font-size: 100px;
+    color: antiquewhite;
+    background-color: bisque;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    gap: 20px;
+    text-align: center;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .Lista a:hover {
+    background-color: rgb(204, 215, 218);
+    color: black;
+    border-radius: 20px;
+    transition: border-radius 0.5s;
+    padding: 4px;
+  }
+  
+  .Contentnos {
+    margin: 25px;
+  }
+  
+  body {
+    background: linear-gradient(to bottom right, #ecbad0, #ffffff);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: #000000 !important;
+  }
+    .navbar {
+      background-color: #000000 !important;
+      flex-wrap: nowrap !important;
+    }
+    .navbar-brand {
+        color: #ffffff;
+    }
+  
+    .burgerbg {
+        background-color: #000000;
+    }
+  
+    .burgert {
+        color: #ffffff;
+    }
+  
+    .nav-link:hover {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+  
+    .navt {
+        margin-left: 10px;
+        font-size: 40px !important;
+    }
+  
+    .navbar-toggler {
+        margin-right: 20px;
+    }
+    
+
+    .imagenindex {
+      background-image: url(../imag/posiblefondo.jpg);
+      background-size: cover;
+      background-position: auto;
+    }
+  
+    .contenedortexto {
+      margin-top: 7%;
+      margin-left: 10%;
+      max-width: 600px;
+      border: 3px solid black;
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+      padding: 3% 40px 5% 40px;
+  
+      .textoimagen1 {
+        font-size: 6vw;
+        text-align: left;
+        font-weight: bold;
+      }
+  
+      .textoimagen2 {
+        font-size: 3vw;
+        font-family: 'Fasthand', cursive;
+      }
+    }
+  
+    .sobrenos {
+      font-size: 60px;
+      color: rgb(13, 13, 14);
+      height: 100px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .titulomasaje {
+      text-align: center;
+      font-size: 40px;
+      color: #000000;
+      margin-top: 100px;
+      font-family: 'Pangolin', cursive;
+      font-weight: 600;
+    }
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-gap: 80px;
+      width: 60%;
+      padding: 20px;
+      margin: auto;
+    }
+  
+      .foto {
+        margin: 5px;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .contenedor-formulario {
+        @include flex-center();
+        border: 3px black;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 50px;
+      }
+
+      .texto-contacto2 {
+        @include flex-center();
+       color: #000000;
+       font-weight: bold;
+       font-size: larger;
+      }
+  
+      .texto-contacto1 {
+        font-size: 30px;
+        margin: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .Textootros {
+        @include flex-center();
+        margin: 50px;
+      }
+
+      .otrostitulo {
+        text-align: center;
+      }
+      @media screen and (max-width: 768px) {
+        .contenedor-imagen {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        .contenedortexto {
+          margin-left: 0px;
+        }
+      }
+  
+      @media screen and (max-width: 768px) {
+        .textoimagen1 {
+          font-size: 8vw;
+        }
+  
+        .textoimagen2 {
+          font-size: 4vw;
+        }
+      }
+  
+      @media screen and (max-width: 900px) {
+        .navlist {
+          display: none;
+        }
+      }
+  
+      @media screen and (min-width: 900px) {
+        .navbar-toggler {
+          display: none;
+        }
+      }
+  
+      @media screen and (max-width: 768px) {
+        .grid-container {
+          @include flex-center();
+          grid-template-columns: 1fr;
+          gap: 30px;
+          width: 100%;
+          align-items: center;
+          flex-direction: column;
+          
+        }
+      }
+
+      @mixin flex-center {
+        display: flex;
+        text-align: center;
+      }
+    
+  
