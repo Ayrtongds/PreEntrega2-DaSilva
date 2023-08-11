@@ -115,10 +115,11 @@ body {
 }
 
 .sobrenos {
-  font-size: 60px;
+  font-size: 40px;
   color: rgb(13, 13, 14);
   height: 100px;
   width: 100%;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -152,19 +153,20 @@ body {
 }
 
 .contenedor-formulario {
-  border: 3px black;
   display: flex;
+  text-align: center;
+  border: 3px black;
   flex-direction: column;
   justify-content: center;
   height: auto;
-  text-align: center;
   padding: 50px;
 }
 
 .texto-contacto2 {
-  text-align: center;
   display: flex;
+  text-align: center;
   color: #000000;
+  display: block;
   font-weight: bold;
   font-size: larger;
 }
@@ -174,6 +176,12 @@ body {
   margin: 25px;
   text-align: center;
   font-weight: bold;
+}
+
+.Textootros {
+  display: flex;
+  text-align: center;
+  margin: 50px;
 }
 
 .otrostitulo {
@@ -211,11 +219,11 @@ body {
 @media screen and (max-width: 768px) {
   .grid-container {
     display: flex;
+    text-align: center;
     grid-template-columns: 1fr;
     gap: 30px;
     width: 100%;
     align-items: center;
     flex-direction: column;
-    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */

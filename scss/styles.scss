@@ -1,3 +1,8 @@
+    @mixin flex-center {
+  display: flex;
+  text-align: center;
+  }
+
 
   .Lista {
     color: rgb(255, 255, 255);
@@ -116,10 +121,11 @@
     }
   
     .sobrenos {
-      font-size: 60px;
+      font-size: 40px;
       color: rgb(13, 13, 14);
       height: 100px;
       width: 100%;
+      margin-bottom: 20px;
       text-align: center;
     }
   
@@ -164,6 +170,7 @@
       .texto-contacto2 {
         @include flex-center();
        color: #000000;
+       display: block;
        font-weight: bold;
        font-size: larger;
       }
@@ -227,11 +234,9 @@
           flex-direction: column;
           
         }
-      }
+      }      
+       
 
-      @mixin flex-center {
-        display: flex;
-        text-align: center;
-      }
+      
     
   
